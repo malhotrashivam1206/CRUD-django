@@ -1,0 +1,7 @@
+<h1>Delete Note</h1>
+<p>Title: {{ note.title }}</p>
+<p>Content: {{ note.content }}</p>
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Delete">
+</form>
